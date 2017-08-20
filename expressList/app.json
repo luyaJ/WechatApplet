@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "rgb(101, 130, 136)",
+    "navigationBarTitleText": "快递单号查询",
+    "navigationBarTextStyle":"black"
+  }
+}
