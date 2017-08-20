@@ -1,0 +1,45 @@
+/**index.wxss**/
+.content{
+	height: 100%;
+	display: flex;
+	margin: 5px;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	padding-top: 30rpx;
+	background-image: url(../img/pp4.png);
+	background-repeat: repeat;
+}
+.screen{
+	background: rgba(255,255,255,0.8);
+	border-radius: 3px;
+	text-align: right;
+	width: 720rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	padding-right: 10rpx;
+	margin-bottom: 30rpx;
+}
+.btnGroup{
+	display: flex;
+	flex-direction: row;
+}
+.item{
+	width: 150rpx;
+	min-height: 150rpx;
+	margin: 10rpx;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 150rpx;
+}
+.blue{
+	color: #fff;
+	border: 1px solid #ccc;
+	background-color: rgba(116,146,255,0.9);
+}
+.red{
+	color: #fef4e9;
+	border: 1px solid #ccc;
+	background: rgb(219, 162, 151);
+}
