@@ -1,0 +1,26 @@
+/* pages/login/login.wxss */
+.login{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 20px;
+	color: #1F30CB;
+}
+.item .login-info{
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+}
+.item input{
+	width: 90%;
+	border: 1px solid #1F30CB;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+}
+.item text{
+	font-size: 12px;
+}
+.btn{
+	margin: 10px;
+}
