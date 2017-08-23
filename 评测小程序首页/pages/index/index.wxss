@@ -1,0 +1,87 @@
+.selection1{
+	border-bottom: 5px solid #ddd;
+}
+.header{
+	border-left-width: 3px ;
+	border-left-style: solid;
+	border-left-color: limegreen;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 80rpx;
+	padding-left: 10rpx;
+	padding-right: 10rpx;
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+.allText{
+	color: green;
+	font-size: 12px;
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.content-item{
+	height: 250rpx;
+	width: 45%;
+	background-color: #ccc;
+	margin: 3px;
+	position: relative;
+}
+.content .content-item image{
+	height: 250rpx;
+	width: 100%;
+}
+
+.content-item-text{
+	position: absolute;
+	bottom: 0px;
+	font-size: 14px;
+	color: #fff;
+	background: linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	background: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
+	height: 75rpx;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-left: 2%;
+}
+
+.list-item{
+	height: 500rpx;
+	width: 100%;
+}
+.list-item-img{
+	height: 300rpx;
+	width: 100%;
+	position: relative;
+}
+.list-item-img .image1{
+	height: 100%;
+	width: 100%;
+}
+
+.avatar{
+	height: 75rpx;
+	width: 75rpx;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -40rpx;
+	right: 50rpx;
+}
+
+.list-item-text{
+	height: 200rpx;
+	width: 100%;
+	margin-top: 20rpx;
+	padding-left: 10rpx;
+	padding-bottom: 10rpx;
+}
+.list-item-text-content{
+	font-size: 12px;
+	color: #999;
+	width: 98%;
+}

@@ -1,0 +1,65 @@
+<view class="container">
+<view class="selection">
+  	<swiper indicator-dots="true" autoplay="true">
+    	<block wx:for="{{imgUrls}}">
+      	<swiper-item>
+        	<image src="{{item}}" class="slide-image"/>
+      	</swiper-item>
+    	</block>
+  	</swiper>
+</view>
+
+<view class="selection selection1">
+	<view class="header">
+		<text>精品推荐</text>	
+		<text class="allText">全部精品</text>	
+	</view>
+	<view class="content">
+		<view class="content-item">
+			<image src="../images/1.jpg"/>
+			<view class="content-item-text">
+				<text>这里是标题1</text>		
+			</view>		
+		</view>
+		<view class="content-item">
+			<image src="../images/2.jpg"/>
+			<view class="content-item-text">
+				<text>这里是标题2</text>		
+			</view>		
+		</view>
+		<view class="content-item">
+			<image src="../images/3.jpg"/>
+			<view class="content-item-text">
+				<text>这里是标题3</text>		
+			</view>		
+		</view>
+		<view class="content-item">
+			<image src="../images/4.jpg"/>
+			<view class="content-item-text">
+				<text>这里是标题4</text>		
+			</view>		
+		</view>
+	</view>
+</view> 
+
+<view class="selection">	
+</view> 
+	<view class="header">
+		<text>热门评测</text>	
+		<text class="allText">全部评测</text>	
+	</view>
+	<view class="list-item" wx:for="{{listItems}}">
+		<view class="list-item-img">
+			<image class="image1" src="../images/1.jpg"/>
+			<image class="avatar" src="../images/2.jpg"/>
+		</view>
+		<view class="list-item-text">
+			<view class="list-item-text-title">
+				<text>这里是标题</text>		
+			</view>
+			<view class="list-item-text-content">
+				<text>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</text>	
+			</view>
+		</view>
+	</view>
+</view>
