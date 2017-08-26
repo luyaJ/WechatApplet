@@ -1,0 +1,232 @@
+<view class="container">
+<!-- 搜索框 -->
+  <view class="search">
+	  <view>
+	  	<input bindinput="inputTyping" placeholder="搜索音乐、歌词、电台" value="{{inputVal}}" bindfocus="focusinput" />
+	  </view>
+  </view>
+
+<!-- 头部导航条 -->
+  <view class="section-navbar">
+  	<view class="navbar">
+  		<text class="item {{currentTab==index ? 'active' : ''}}" wx:for="{{navbar}}" data-index="{{index}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  	</view>	
+  		
+  	<!-- 个性推荐 -->
+  	<view hidden="{{currentTab != 0}}">
+		<!-- 滚动条 -->
+      <swiper indicator-dots="true" autoplay="true">
+			  <block wx:for="{{imgurls}}">
+				  <swiper-item>
+					  <image src="{{item}}" class="slide-image" width="355" height="150"/>
+				  </swiper-item>
+			  </block>
+		  </swiper>
+		<!-- 滚动条下面的 -->
+      <view class="container_music">
+        <view class="music_item">
+          <image src="/images/swiper-siren.png" />
+          <text>私人FM</text>		
+        </view>
+        <view class="music_item">
+          <image src="/images/swiper-every.png" />
+          <text>每日歌曲推荐</text>		
+        </view>
+        <view class="music_item">
+          <image src="/images/swiper-cloud.png" />
+          <text>云音乐热歌榜</text>		
+        </view>
+      </view>
+
+			<view class="content">
+			<!-- 推荐歌单 -->
+				<view class="recommendMusic">
+					<view class="header">
+						<text>推荐歌单</text>
+						<image src="/images/musicArrow.png"/>
+					</view>
+					<view class="rm_content">
+						<view class="rm-item">
+							<image src="http://p1.music.126.net/ZgKMqgikO0VxVFadd4gUZQ==/18915998044540495.jpg?param=140y140"/>
+							<text>那些与心灵共振</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p1.music.126.net/OuPyJ651RxsyE8rcMqpmXw==/18765364953256662.jpg?param=140y140"/>
+							<text>信仰艺术家</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p1.music.126.net/pM1kz36YnzLv8aHM_iwrcw==/18585045046314935.jpg?param=140y140"/>
+							<text>YoungJackGroup</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p1.music.126.net/W6E0oibGTOqR59RAKQwjUg==/18494885092847941.jpg?param=140y140"/>
+							<text>想撩妹？</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p1.music.126.net/IU2S4c5-E2Tdveanfhp8YQ==/109951162992859896.jpg?param=140y140"/>
+							<text>2017上半年精选</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p1.music.126.net/4UZhkirXdTTVSNSRI-l54Q==/18890709277134333.jpg?param=140y140"/>
+							<text>漫画盘点</text>		
+						</view>
+					</view>
+				</view>
+			<!-- 最新音乐 -->
+				<view class="recommendMusic">
+					<view class="header">
+						<text>最新音乐</text>
+						<image src="/images/musicArrow.png"/>
+					</view>
+					<view class="rm_content">
+						<view class="rm-item">
+							<image src="http://p4.music.126.net/xEsoBw7qi08SyCy6t_bnbQ==/109951163008456566.jpg?param=100y100"/>
+							<text>EveryDay</text>	
+							<text class="name">briage</text>	
+						</view>
+						<view  class="rm-item">
+							<image src="http://p3.music.126.net/LVmBVwRmzKJ92ssNZyZEWQ==/18811544441628957.jpg?param=100y100"/>
+							<text>Friends</text>	
+							<text class="name">Justin Bieber</text>	
+						</view>
+						<view  class="rm-item">
+							<image src="http://p3.music.126.net/p-RaxmG86Kct5mcVUulO6w==/109951163007453329.jpg?param=100y100"/>
+							<text>Memories</text>	
+							<text class="name">V.A</text>	
+						</view>
+						<view  class="rm-item">
+							<image src="http://p3.music.126.net/yFn3lxf498yNTn4_ag8AsA==/19112810625694224.jpg?param=100y100"/>
+							<text>时光之墟</text>
+							<text class="name">许巍洲</text>		
+						</view>
+						<view  class="rm-item">
+							<image src="http://p4.music.126.net/PNMq0iypxEeHPhJFUnhQZA==/109951163007879949.jpg?param=100y100"/>
+							<text>2017快乐男声</text>	
+							<text class="name">群星</text>	
+						</view>
+						<view  class="rm-item">
+							<image src="http://p3.music.126.net/1ixwImBKvs1AfoEPvV_QPg==/109951163011108006.jpg?param=100y100"/>
+							<text>Look What You</text>	
+							<text class="name">Taylor Swift</text>	
+						</view>
+					</view>
+				</view>
+			<!-- 精选专栏 -->
+				<view class="choiceColumn">
+					<view class="header">
+						<text>精选专栏</text>
+						<image src="/images/musicArrow.png"/>
+					</view>
+					<view class="column">
+						<view class="column-item">	
+							<text>公立学校音乐教育削减开支？红辣椒Flea说这是虐待儿童</text>
+							<text class="read">阅读 5313</text>
+						</view>
+						<image src="http://p4.music.126.net/xEsoBw7qi08SyCy6t_bnbQ==/109951163008456566.jpg?param=100y100" />
+					</view>
+					<view class="column">
+						<view class="column-item">	
+							<text>泰勒斯威夫特用音乐演出一部“自杀电影”</text>
+							<text class="read">阅读 22486</text>
+						</view>
+						<image src="http://p1.music.126.net/ZgKMqgikO0VxVFadd4gUZQ==/18915998044540495.jpg?param=140y140" />
+					</view>
+					<view class="column">
+						<view class="column-item">	
+							<text>那帮吸猫的家伙，你们给主子听什么歌？</text>
+							<text class="read">阅读 12358</text>
+						</view>
+						<image src="http://p3.music.126.net/yFn3lxf498yNTn4_ag8AsA==/19112810625694224.jpg?param=100y100" />
+					</view>
+				</view>
+			</view>
+  	</view>
+
+  	<!-- 歌单 -->
+  		<view class="tab-content" hidden="{{currentTab != 1}}">
+  			<view class="top">
+          <image src="/images/banner_3.jpg"></image>
+          <view class="top-text">
+            <text>精品歌单</text>
+            <image src="/images/arrow-right.png"></image>
+            <view class="top-txt">
+              <text class="txt">【Celtic】 跟着民谣去旅游--...</text>
+              <text class="txt2">跟随音乐来一场别样的爱尔兰之旅吧~</text>
+            </view>
+          </view>          
+        </view>
+
+        <view class="mid">
+          <view class="mid-all">
+            <text>全部歌单</text>
+            <image src="/images/musicArrow.png" />
+          </view>
+          <view class="mid-some">
+            <text>欧美 | </text>
+            <text>民谣 | </text>
+            <text>电子</text>
+          </view> 
+        </view>
+
+        <view class="end">
+          <view class="end-item">
+						<image src="http://p4.music.126.net/PNMq0iypxEeHPhJFUnhQZA==/109951163007879949.jpg?param=100y100"/>
+						<text>极致深情 | 音律入耳 我仿佛又失恋了千百次</text>	
+            <view class="icon">
+              <view class="icon-music">
+                <image src="/images/music.png" />
+                <text>30万</text>
+              </view>
+            </view>
+          </view>
+          <view class="end-item">
+						<image src="http://p1.music.126.net/lpbNjXygw9zAwlZR5IM74A==/18791753232319012.jpg?param=140y140"/>
+						<text>消暑||夏日海滩复古趴</text>	
+            <view class="icon">
+              <view class="icon-music">
+                <image src="/images/music.png" />
+                <text>30万</text>
+              </view>
+            </view>
+          </view>
+          <view class="end-item">
+						<image src="http://p1.music.126.net/tK5waHNqWQcT_o2uYLTNCA==/18751071302077443.jpg?param=140y140"/>
+						<text>【日系/清唱】脱离伴奏，享受人声的动听</text>	
+            <view class="icon">
+              <view class="icon-music">
+                <image src="/images/music.png" />
+                <text>30万</text>
+              </view>
+            </view>
+          </view>
+          <view class="end-item">
+						<image src="http://p1.music.126.net/GeoF8kr18UkLWoPdlA65hA==/18646617697484969.jpg?param=140y140"/>
+						<text>极致深情 | 音律入耳 我仿佛又失恋了千百次</text>	
+            <view class="icon">
+              <view class="icon-music">
+                <image src="/images/music.png" />
+                <text>30万</text>
+              </view>
+            </view>
+          </view> 
+        </view>
+  		</view>
+
+  	<!-- 主播电台 -->
+  		<view class="tab-content" hidden="{{currentTab != 2}}">
+        <swiper indicator-dots="true" autoplay="true">
+          <block wx:for="{{imageurls}}">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image" width="355" height="150"/>
+            </swiper-item>
+          </block>
+		    </swiper>
+      </view>
+
+  	<!-- 排行榜 -->
+  		<view class="tab-content" hidden="{{currentTab != 3}}">
+        排行榜
+      </view>
+  	</view> 
+</view>
+

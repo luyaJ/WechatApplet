@@ -1,0 +1,264 @@
+.search{
+	padding: 3px;
+	background: #EEEEF0;
+}
+.search input{
+	width: 80%;
+	height: 20px;
+	border: 1px solid #999;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: #ffffff;
+	font-size: 10pt;
+	border-bottom: 1px solid #999;
+}
+/* 头部导航条 */
+.section-navbar{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.navbar{
+	display: flex;
+	position: relative;
+	background: #fff;
+}
+.navbar .item{
+	font-size: 10pt;
+	flex: auto;
+	line-height: 80rpx;
+	text-align: center;
+	position: relative;
+}
+.navbar .item.active{
+	color: #D43C33;
+}
+.navbar .item.active:after{
+	content: '';
+	display: block;
+	position: absolute;
+	background: #D43C33;
+	height: 4rpx;
+	bottom: 0;  
+    left: 0;  
+    right: 0; 
+    width: 58%;
+    margin: auto;
+}
+.navbar .item .active:after{  
+    content: "";  
+    display: block;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    height: 4rpx;  
+    background: #D43C33;  
+}
+/* 轮播 */
+.slide-image{
+	width: 100%;
+	height: 150px;
+}
+
+.container_music{
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-size: 10pt;
+}
+.music_item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex: auto;
+	align-items: center;
+	width: 33%;
+}
+.container_music image{
+	height: 50px;
+	width: 50px;
+	border: 1px solid #D43C33;
+	border-radius: 50%;
+	margin-bottom: 5px;
+}
+
+/* 各歌单部分 */
+.content{
+	margin-top:10px;
+}
+.header{
+	border-left-width: 4px ;
+	border-left-style: solid;
+	border-left-color: #D43C33;
+	margin-bottom: 5px;
+}
+.header text{
+	margin: 10px;
+	color: #000000;
+}
+.header image{
+	height: 15px;
+	width: 15px;
+}
+/* 推荐歌单，最新音乐*/
+.recommendMusic{	
+	margin-bottom: 30px;		
+}
+.rm_content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.rm-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: auto;
+}
+.rm_content image{
+	height: 120px;
+	width: 120px;
+	margin-top: 8px;
+}
+.rm_content text{
+	font-size: 10pt;
+	color: black;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+.rm_content .name{
+	color: #888888;
+}
+
+/* 精选专栏 */
+.column{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #ccc;
+}
+.column-item{
+	width: 100%;
+	margin-left: 5px;
+	display: flex;
+	flex-direction: column;
+}
+.column-item text{
+	font-size: 11pt;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.column-item .read{
+	color: #888888;
+	font-size: 9pt;
+}
+.column image{
+	height: 70px;
+	width: 40%;
+}
+
+/* 头部导航栏--歌单  */
+/* 图片部分 */
+.top image{
+  width: 100%;
+  height: 150px;
+}
+.top{
+  position: relative;
+}
+.top-text{
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  color: #ffffff;
+  font-weight: bold;
+}
+.top-text image{
+  margin-left: 5px;
+  height: 13px;
+  width: 10px; 
+}
+.top-txt{
+   margin-top: 10px;
+}
+.top-txt .txt{
+  font-size: 11pt;
+  font-weight: 200;
+}
+.top-txt .txt2{
+  font-size: 8pt;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* 中间文字 */
+.mid{
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+.mid-all{
+  border: 1px solid #ccc; 
+  border-radius: 15px;
+  height: 20px;
+  line-height: 20px;
+  width: 80px;
+  font-size: 10pt;
+  text-align: center;
+  
+}
+.mid-all text{
+  padding: 3px;
+}
+.mid-all image{
+  height: 10px;
+  width: 10px;
+  margin-left: 5px;
+}
+.mid-some{
+  font-size: 9pt;
+  color: #888888;
+  line-height: 20px;
+}
+
+/* 底部歌单 */
+.end{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.end-item{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  flex: auto;
+}
+.end-item image{
+  height: 170px;
+  width: 95%;
+  position: relative;
+}
+.end-item text{
+  margin: 5px;
+  font-size: 10pt; 
+}
+ .icon{
+  position: absolute;
+} 
+.icon-music{
+  right: 0;
+  top: 0;
+  float: right;
+}
+.icon-music image{
+  height: 15px;
+  width: 15px;
+}
+.icon-music text{
+  color: #ffffff;
+  font-size: 8pt;
+}
