@@ -15,8 +15,8 @@
 }
 
 .post-author{
-  width: 60rpx;
-  height: 60rpx;
+  width: 64rpx;
+  height: 64rpx;
   vertical-align: middle;
 }
 
