@@ -2,7 +2,7 @@
 
 .movie-list-container{
   background: #fff;
-   display: flex;
+  display: flex;
   flex-direction: column; 
 }
 
@@ -20,7 +20,7 @@
 
 .more-text{
   vertical-align: middle;
-   margin-right: 10rpx; 
+  margin-right: 10rpx; 
   color: #1f4ba5;
 }
 
