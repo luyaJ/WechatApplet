@@ -9,7 +9,12 @@ var local_database = [
     collection: '96',
     dateTime: '24小时前',
     author: '胡歌',
-    postId: 0
+    postId: 0,
+    music: {
+      url: 'http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46',
+      title: '此时此刻-许巍',
+      coverImg: 'http://y.gtimg.cn/music/photo_new/T002R300x300M000003rsKF44GyaSk.jpg?max_age=2592000'
+    }
   },
   {
     date: "Oct 01 2017",
@@ -21,7 +26,12 @@ var local_database = [
     collection: '71',
     dateTime: '23小时前',
     author: '俞灏明',
-    postId: 1
+    postId: 1,
+    music: {
+      url: 'http://ws.stream.qqmusic.qq.com/C100002I8eGJ28BI17.m4a?fromtag=38',
+      title: '朋友-谭咏麟',
+      coverImg: 'http://y.gtimg.cn/music/photo_new/T002R150x150M000004eGsCN3SUheO.jpg?max_age=2592000'
+    }
   },
   {
     date: "Oct 02 2017",
@@ -33,7 +43,12 @@ var local_database = [
     collection: '66',
     dateTime: '24小时前',
     author: '邓丽君',
-    postId: 2
+    postId: 2,
+    music: {
+      url: 'http://ws.stream.qqmusic.qq.com/C100003507bR0gDKBm.m4a?fromtag=38',
+      title: '夜夜夜夜-齐秦',
+      coverImg: 'http://y.gtimg.cn/music/photo_new/T002R150x150M000001TEc6V0kjpVC.jpg?max_age=2592000'
+    }
   },
   {
     date: "Oct 03 2017",
@@ -45,7 +60,12 @@ var local_database = [
     collection: '74',
     dateTime: '13小时前',
     author: '张杰',
-    postId: 3
+    postId: 3,
+    music: {
+      url: 'http://ws.stream.qqmusic.qq.com/C100003GdCmG4NkEOR.m4a?fromtag=38',
+      title: '鬼迷心窍-李宗盛',
+      coverImg: 'http://y.gtimg.cn/music/photo_new/T002R150x150M000002xOmp62kqSic.jpg?max_age=2592000'
+    }
   }
 ]
 
