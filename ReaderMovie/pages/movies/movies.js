@@ -18,6 +18,15 @@ Page({
     this.getMovieListData(top250Url,"top250","豆瓣Top250");
   },
 
+  //更多
+  onMoreTap: function(e){
+    console.log(e)
+    var categroy = e.currentTarget.dataset.categroy;
+    wx.navigateTo({
+      url: 'more-movie/more-movie?categroy=' + categroy
+    })
+  },
+
   //访问api
   getMovieListData: function (url, settedKey, categroyTitle){
     var that = this;
