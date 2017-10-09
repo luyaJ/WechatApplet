@@ -4,8 +4,7 @@
     "pages/index/index", 
     "pages/posts/posts",
     "pages/posts/post-detail/post-detail",
-    "pages/movies/more-movie/more-movie",
-    "pages/movies/movie-grid/movie-grid"  
+    "pages/movies/more-movie/more-movie"
   ],
   "window":{
     "backgroundTextStyle":"light",

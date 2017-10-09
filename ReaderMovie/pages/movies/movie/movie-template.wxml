@@ -1,4 +1,5 @@
 <import src="../stars/stars-template.wxml" />
+
 <template name="movieTemplate">
   <view class='movie-container'>
     <image class='movie-img' src='{{coverageUrl}}'></image>

@@ -11,7 +11,7 @@ Page({
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.switchTab({
+    wx.switchTab({  //跳转到一个带tab选项卡的页面，必须使用wx.switchTab这个方法
       url: '../posts/posts'
     })
   },

@@ -1,4 +1,5 @@
-//星星转换
+// // 公共文件 
+// //星星转换
 function covertToStartsArray(stars){
   var num = stars.toString().substring(0,1);
   var array = [];
@@ -14,5 +15,5 @@ function covertToStartsArray(stars){
 }
 
 module.exports = {
-  covertToStartsArray: covertToStartsArray
+  covertToStartsArray: covertToStartsArray,
 }

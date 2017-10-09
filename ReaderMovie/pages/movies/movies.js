@@ -20,7 +20,7 @@ Page({
 
   //更多
   onMoreTap: function(e){
-    console.log(e)
+    //console.log(e)
     var categroy = e.currentTarget.dataset.categroy;
     wx.navigateTo({
       url: 'more-movie/more-movie?categroy=' + categroy
@@ -37,7 +37,6 @@ Page({
         'content-type': 'Application/json'
       },
       success: function (res) {
-        console.log(res);
         that.processDoubanData(res.data, settedKey, categroyTitle);
       },
       fail: function(){
