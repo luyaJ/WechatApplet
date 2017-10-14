@@ -14,6 +14,23 @@ function covertToStartsArray(stars){
   return array;
 }
 
+function http(url,callBack) {
+  wx.request({
+    url: url,
+    method: 'GET',
+    header: {
+      'content-type': 'Application/json'
+    },
+    success: function (res) {
+      callBack(res.data);
+    },
+    fail: function () {
+      console.log(error);
+    }
+  });
+}
+
 module.exports = {
   covertToStartsArray: covertToStartsArray,
+  http: http
 }
